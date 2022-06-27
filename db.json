@@ -1,0 +1,57 @@
+{
+    "songs": [
+      { "id": 1, 
+        "title": "1 Hour Of Best Anime Sad Emotional and Sad Anime OST Mix 2020 Sad Anime Music Collection 2020", 
+        "srcImg": "./assets/images/giphy.gif"
+      },
+      { "id": 2, 
+        "title" : "3 AM Coding Session Lofi Hip Hop Mix Study Coding Beats",
+        "srcImg" : "https://dc85enhu9zukf.cloudfront.net/gifs/97e6IX0kayYTK.gif"
+      },  
+      { "id": 3, 
+        "title" : "Best songs to boost your mood A playlist for study travel relax fun",
+        "srcImg" : "./assets/images/chill.gif"
+      },
+      { "id": 4, 
+        "title" : "LOFI CHILL",
+        "srcImg" : "/assets/images/lofi chill.gif"
+      },
+      { "id": 5, 
+        "title" : "mellow and soft chinese songs relax study chill cpop playlist",
+        "srcImg" : "./assets/images/china.gif"
+      },
+      { "id": 6, 
+        "title" : "old songs but its lofi remix",
+        "srcImg" : "./assets/images/old song.gif"
+      },
+      { "id": 7, 
+        "title" : "japanese chill songs",
+        "srcImg" : "./assets/images/japanese-chill-songs.gif"
+      },
+      { "id": 8, 
+        "title" : "Vietnamese old songs",
+        "srcImg" : "https://dc85enhu9zukf.cloudfront.net/gifs/PXj1J0eMONGOA.gif"
+      },
+      { "id": 9, 
+        "title" : "Piano Studio Ghibli Collection 1 Hayao Miyazaki",
+        "srcImg" : "./assets/images/ghibli.gif"
+      },
+      { "id": 10, 
+        "title" : "soft japanese playlist to study chill sleep",
+        "srcImg" : "./assets/images/2970.gif"
+      },
+      { "id": 11, 
+        "title" : "Swing Beats Jazz Hop  Lo Fi  Chill Mix",
+        "srcImg" : "./assets/images/jazz.gif"
+      },
+      { "id": 12, 
+        "title" : "Tiktok Viral Music",
+        "srcImg" : "./assets/images/tiktok.gif"
+      }
+
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }

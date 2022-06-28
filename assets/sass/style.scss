@@ -1,12 +1,23 @@
 @import './reset.scss';
 @import './var.scss';
 @import './mixin.scss';
+
 .wallpaper{
     position: absolute;
-    height: 100vh;
-    inset: 0 0 0 0;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
-    opacity: .6
+    opacity: .6;
+    &.on{
+        animation: turnOn 1s ease forwards;
+        border-radius: 10px;
+    }
+}
+.pointer{
+    cursor: pointer
 }
 
 .container{
@@ -26,6 +37,7 @@
         }
         
     }
+    
 }
 
 .play-btn:hover img,
@@ -182,3 +194,72 @@
             pointer-events: none;
         }
     }
+.off{
+    display: none !important;
+}
+
+.press-wrapper{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: min-content;
+    pointer-events: none;
+    & span{
+        position: absolute;
+        right: -13px;
+        top: 0;
+        opacity: 0;
+        animation: blink .8s infinite linear;
+        animation-delay: 1.5s;
+    }
+}
+
+.press-to-start {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 0;
+    animation: typing 1s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes turnOn {
+    0%{
+        width: 20%;
+        height: 10px;
+        opacity: .1;
+    }
+
+    50%{
+           width: 80%;
+           height: 10px;
+           opacity: .2;
+    }
+    
+    100%{
+        width: 100%;
+        height: 100%;
+        opacity: .6;
+    }
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

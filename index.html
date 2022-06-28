@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
+    <div class="wrapper ">
+        <div class="header off">
             <div class="working text">
                 <span>keep working</span>
             </div>
@@ -23,15 +23,15 @@
         
         
         <div class="container">
-            <img class="wallpaper" src="./assets/images/giphy.gif" alt="">
-            <div class="play-btn play paused">
+            <img class="wallpaper pointer" src="./assets/images/giphy.gif" alt="" data-id="1">
+            <div class="play-btn play paused off">
                 <img src="https://www.lofi.cafe/static/media/pause.69ddfc29.svg" alt="">
             </div>
-            <div class="pause-btn play paused">
+            <div class="pause-btn play paused off">
                 <img src="https://www.lofi.cafe/static/media/play.1055bee6.svg" alt="">
             </div>
         </div>
-        <div class="footer">
+        <div class="footer off">
             <div class="audio-navigation">
                 <img src="https://www.lofi.cafe/static/media/pause.69ddfc29.svg" alt="" class="play-btn play paused">
                 <img src="https://www.lofi.cafe/static/media/play.1055bee6.svg" alt="" class="pause-btn play paused">
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div class="audio-list-wrapper">
+        <div class="audio-list-wrapper off">
             <div class="close-btn">
                 <ion-icon name="close-outline"></ion-icon>
             </div>
@@ -58,6 +58,10 @@
         <audio id="main-song">
             <source src="./assets/audio/1 Hour Of Best Anime Sad Emotional and Sad Anime OST Mix 2020 Sad Anime Music Collection 2020.mp3" type="audio/mp3">
         </audio>
+        <div class="press-wrapper text">
+            <div class="press-to-start">press any key to start</div>
+            <span>█</span>
+        </div>
     </div>
     <script src="./assets/js/main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

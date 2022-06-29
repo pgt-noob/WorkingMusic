@@ -1,4 +1,4 @@
-window.addEventListener('load', function (e) {
+window.addEventListener('load', async function (e) {
 const playBtn = document.querySelectorAll('.play-btn');
 const pauseBtn = document.querySelectorAll('.pause-btn');
 const play = document.querySelectorAll('.play');
@@ -10,6 +10,7 @@ const endpoint = 'https://minimusic.herokuapp.com/songs'
 const closeBtn = document.querySelector('.close-btn')
 const wallpaper = document.querySelector('.wallpaper')
 const wrapper = document.querySelector('.wrapper');
+const arr = await fetch(endpoint).then(data => data.json().then(data => data));
 
 wallpaper.classList.add('on');
 wallpaper.addEventListener('click', pressStart)
@@ -84,7 +85,7 @@ async function changeSong (index,dir = 0) {
     let target;
     const id = wallpaper.dataset.id -1;
     const random = Math.floor(Math.random()*2.9)
-    const arr = await fetch(endpoint).then(data => data.json().then(data => data));
+    
     if (dir && dir > 0 && id < arr.length-1) {
         target = arr[id + 1]
     } else if (dir && dir < 0 && id > 0) {
@@ -138,5 +139,9 @@ function pressStart (e) {
         })
     })
     document.querySelector('.press-wrapper').classList.add('off');
+}
+
+async function getAPI () {
+    const response = await fetch(endpoint).then(data => data.json()).then(data => data);
 }
 })
